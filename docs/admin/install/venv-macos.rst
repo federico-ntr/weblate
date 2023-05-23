@@ -14,8 +14,11 @@ Make sure pip will be able to find the ``libffi`` and ``openssl`` versions provi
 — this will be needed during the installation build step.
 
 .. code-block:: sh
-
+    # Intel
     export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig:/usr/local/opt/openssl@3/lib/pkgconfig"
+    
+    # Apple Silicon
+    export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig:/opt/homebrew/opt/openssl@3/lib/pkgconfig"
 
 .. include:: steps/install-system-optional.rst
 
